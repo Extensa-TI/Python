@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="035ee3e0-07fb-49fb-8d85-2f8683895ce3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/banco.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/cliente.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conta.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Banco.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Banco.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banco.py" beforeDir="false" afterPath="$PROJECT_DIR$/banco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/cliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/cliente.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conta.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/conta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/helper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +28,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="30QJV3AHhL2jPCRewL3gELAQEFK" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -39,7 +42,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.teste.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main"
   }
