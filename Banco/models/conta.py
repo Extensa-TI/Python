@@ -40,18 +40,53 @@ class Conta:
     def saldo_total(self) -> float:
         return self.__saldo_total
 
+    @saldo_total.setter
+    def saldo_total(self, valor: float):
+        self.__saldo_total = valor
+
     @property
     def _calcula_saldo_total(self) -> float:
         return self.__saldo + self.__limite
 
     def depositar(self, valor: float):
-        pass
+        if valor > 0:
+            self.saldo = self.saldo + valor
+            self.saldo_total = self._calcula_saldo_total
+            print('Depósito efetuado com sucesso!')
+        else:
+            print('Erro ao efetuar o depósito. Tente novamente!')
 
     def sacar(self, valor: float):
-        pass
+        if 0 < valor <= self.saldo_total:
+            if self.saldo >= valor:
+                self.saldo = self.saldo - valor
+                self.saldo_total = self._calcula_saldo_total
+            else:
+                restante: float = self.saldo - valor
+                self.limite = self.limite + restante
+                self.saldo = 0
+                self.saldo_total = self._calcula_saldo_total
+            print('Saldo efetuado com sucesso!')
+        else:
+            print('Saque não realizado. Tente novamente!')
 
     def transferir(self, destino: object, valor: float):
-        pass
+        if 0 < valor <= self.saldo_total:
+            if self.saldo >= valor:
+                self.saldo = self.saldo - valor
+                self.saldo_total = self._calcula_saldo_total
+                destino.saldo = destino.saldo + valor
+                destino.saldo_total = destino._calcula_saldo_total
+            else:
+                restante = self.saldo - valor
+                self.limite = self.limite + restante
+                self.saldo = 0
+                self.saldo_total = self._calcula_saldo_total
+                destino.saldo = destino.saldo + valor
+                destino.saldo_total = destino._calcula_saldo_total
+            print('Transferência realizada com sucesso!')
+        else:
+            print('Transferência não realizada. Tente novamente!')
 
     def __str__(self) ->str:
         return f'Numero da conta: {self.numero}\nCliente: {self.cliente.nome}\nSaldo Total: {format_float_str_moeda(self.saldo_total)}'

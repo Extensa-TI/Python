@@ -1,4 +1,3 @@
-from telnetlib import SUPPRESS_LOCAL_ECHO
 from typing import List
 from time import sleep
 from models.cliente import Cliente
